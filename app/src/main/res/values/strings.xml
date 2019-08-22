@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CFCalculator</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="standard" style="TextColor">Standard</string>
+    <string name="metrics" style="TextColor">Meters</string>
+    <string name="cubic_feet">Standard (US)</string>
+    <string name="feet">Feet</string>
+    <string name="cubic_inches">Inches</string>
+    <string name="meters">Metric</string>
+    <string name="centimeters">Centimeters</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+</resources>
