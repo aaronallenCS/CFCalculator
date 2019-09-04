@@ -8,7 +8,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,11 +20,9 @@ import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.android.cfcalculator.R;
 import com.example.android.cfcalculator.RoomDBClasses.MeasurementDatabase;
-import com.example.android.cfcalculator.RoomDBClasses.Measurements;
 
 import io.reactivex.Completable;
 import io.reactivex.schedulers.Schedulers;
@@ -211,8 +208,10 @@ public class MetersFragment extends Fragment
                     public void onClick(View view) {
                         final MeasurementDatabase appDb = MeasurementDatabase.getDatabase(getActivity());
 
-                        final Measurements m = new Measurements(null,
-                                ed.getText().toString(), null, null,
+                        final Measurements m = new Measurements(
+                                null,
+                                ed.getText().toString(),
+                                null, null,
                                 metersResult.getText().toString(),
                                 centimetersResult.getText().toString());
 

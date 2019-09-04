@@ -7,11 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
-import com.example.android.cfcalculator.RoomDBClasses.Measurements;
-
 import java.util.List;
-
 public class MeasurementAdapter extends RecyclerView.Adapter<MeasurementAdapter.MeasurementsViewHolder>
 {
     private final LayoutInflater mInflater;
@@ -39,14 +35,8 @@ public class MeasurementAdapter extends RecyclerView.Adapter<MeasurementAdapter.
             holder.name.setText(current.getName());
             holder.feetResult.setText(current.getFinalResultFt());
             holder.inchesResult.setText(current.getFinalResultIn());
-            if(holder.metersResult == null)
-            {
-            }
-            else
-            {
-                holder.metersResult.setText(current.getFinalResultM());
-                holder.centimetersResult.setText(current.getFinalResultCM());
-            }
+            holder.metersResult.setText(current.getFinalResultM());
+            holder.centimetersResult.setText(current.getFinalResultCM());
         }
         else
         {

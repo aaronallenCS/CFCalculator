@@ -6,13 +6,11 @@ import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,20 +21,13 @@ import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.android.cfcalculator.CustomDialogClass;
 import com.example.android.cfcalculator.R;
 import com.example.android.cfcalculator.RoomDBClasses.MeasurementDatabase;
-import com.example.android.cfcalculator.RoomDBClasses.Measurements;
 
 import java.util.List;
 
 import io.reactivex.Completable;
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 /**
@@ -174,7 +165,6 @@ public class StandardFragment extends Fragment {
                     cubicFeet.setText(cubicMeasure + " ft.");
             }
         });
-
         // Inflate the layout for this fragment
         return v;
     }

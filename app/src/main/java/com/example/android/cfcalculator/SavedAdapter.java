@@ -40,6 +40,7 @@ public class SavedAdapter extends RecyclerView.Adapter<SavedAdapter.SavedViewHol
     public void onBindViewHolder(SavedViewHolder holder, int position)
     {
         holder.textView.setText(ftMeasurements.get(position));
+
     }
 
     @Override
